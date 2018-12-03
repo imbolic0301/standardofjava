@@ -1,8 +1,11 @@
 
 public class Temp {
 	public static void main(String[] args) {
-		for(int i = 79, j =10; (i>=70 || j>0); i--, j--) {
-			System.out.print("case "+i + ": " + j);
-		} 
+		Integer t = 0;
+		for (int i = 0; i < 16; i++) {
+			System.out.print(String.format("\"" +"%04d",(Integer.parseInt(Integer.toBinaryString(i)))) + "\",");
+		}
 	}
+
+	
 }
