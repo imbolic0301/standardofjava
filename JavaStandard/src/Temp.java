@@ -1,11 +1,23 @@
 
 public class Temp {
 	public static void main(String[] args) {
-		Integer t = 0;
-		for (int i = 0; i < 16; i++) {
-			System.out.print(String.format("\"" +"%04d",(Integer.parseInt(Integer.toBinaryString(i)))) + "\",");
-		}
+		Test test = new Test();
+		Thread thr = new Thread(test);
+		System.out.println(thr.currentThread().getName());
+		
+		
 	}
 
 	
+}
+
+
+class Test implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
