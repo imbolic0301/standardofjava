@@ -5,7 +5,6 @@ public class Temp {
 		Thread thr = new Thread(test);
 		System.out.println(thr.currentThread().getName());
 		
-		
 	}
 
 	
